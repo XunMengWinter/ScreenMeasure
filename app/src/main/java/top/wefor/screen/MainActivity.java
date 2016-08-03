@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_view) {
-            String url = "https://github.com/XunMengWinter/Screen";
+            String url = "https://github.com/XunMengWinter/ScreenMeasure";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
