@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="top.wefor.screen.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="113pt"
+        android:layout_height="170pt"
+        android:layout_gravity="bottom"
+        android:background="#dfa"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#6666"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#6666"/>
+
+        <ImageView
+            android:id="@+id/scale_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_scale"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/cmInch_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm | inch "/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/width_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入宽"
+            android:inputType="numberDecimal"
+            android:maxEms="3"
+            android:singleLine="true"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/height_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入高"
+            android:inputType="numberDecimal"
+            android:maxEms="3"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/diagonal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:text="对角线: "/>
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新(4*6)"/>
+    </LinearLayout>
+
+</FrameLayout>
+
